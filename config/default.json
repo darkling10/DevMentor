@@ -1,3 +1,5 @@
 {
-    "mongoURI": "mongodb://localhost:27017/DevMentor"
+    "mongoURI": "mongodb://localhost:27017/DevMentor",
+    "jwtSecret": "mysecrettoken"
+
 }

@@ -1,11 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const Profile = require("../models/UserProfile")
+const User = require("../models/User")
 
 router.get("/", (req, res) => {
-    res.send("User profile route")
+    // try {
+
+    // } catch (error) {
+
+    // }
+    res.send("Hello")
 })
-
-
 
 module.exports = router;
