@@ -1,14 +1,16 @@
 const express = require('express');
+const cors = require('cors')
+
 const connectDB = require("./config/db");
 const app = express();
 
 
-
 connectDB();
+
+// middlewares
 app.use(express.json({ extended: false }))
 
-const cors = require('cors')
-app.use(cors())
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send("Welcome to DevMentor");
@@ -17,6 +19,7 @@ app.get('/', (req, res) => {
 app.use("/Profile", require("./routes/userProfile"));
 app.use("/auth", require("./routes/auth"));
 app.use("/User", require("./routes/users"));
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
