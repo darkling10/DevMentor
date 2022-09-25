@@ -23,7 +23,6 @@ const userRegistration = async (req, res) => {
 
     const myToken = await user.getAuthToken();
     res.status(200).json({ token: myToken });
-    console.log(myToken);
   } catch (err) {
     console.log(err.message);
     res.status(500).json({ message: err.message });

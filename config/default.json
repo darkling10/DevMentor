@@ -1,5 +1,3 @@
 {
-    "mongoURI": "mongodb+srv://DevMentor:password12345@cluster0.84tinar.mongodb.net/DevMentor?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken"
-
+    
 }
