@@ -18,6 +18,7 @@ app.use(express.json({ extended: false }));
 app.use(cors());
 
 app.get("/", (req, res) => {
+  console.log("Triggered port")
   res.send("Welcome to DevMentor");
 });
 
